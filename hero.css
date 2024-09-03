@@ -80,6 +80,7 @@ header {
      border-radius: 1rem;
      border-top-right-radius: 0rem;
      border-bottom-right-radius: 0rem;
+     
 }
 
 .card-info {
@@ -186,8 +187,14 @@ footer {
  .rodape {
      display: flex;
      flex-direction: row;
-     justify-content: flex-start;
+     justify-content: space-around;
      
+ }
+
+ .rodape-texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
  }
  
  .rodape a {
@@ -209,9 +216,77 @@ footer {
  .rodape-2 {
      margin: 2rem 8rem;
      font-family: "Nunito Sans", sans-serif; 
+     align-items: center ;
  }
  
  .rodape-3 {
      margin: 2rem 8rem;
      font-family: "Nunito Sans", sans-serif; 
  }
+
+ @media (max-width: 500px) {
+    /*html {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    } */
+
+    .produto {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    .imagem-produto img {
+        width: 364px;
+        height: 200px;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulos-header {
+        display: none;
+    } 
+
+    .multiple-card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .card-box {
+        margin: 3rem 2.5rem;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .rodape-texto {
+            display: flex;
+            overflow-x: hidden;
+            justify-content: center;
+            margin: 0rem 1rem;
+    }
+    
+    .icons-rodape {
+        display: flex;
+        margin: 40px;
+    }
+
+}
